@@ -1,6 +1,7 @@
 import Viz from "viz.js";
 import workerURL from "viz.js/full.render.js?url";
 import type { FileSaver } from "./FileSaver";
+import sketchy from "./sketch.js";
 import { assertNever } from "./utils";
 import { sourceFormatExtension } from "./viz";
 

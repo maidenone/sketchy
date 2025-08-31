@@ -6,6 +6,7 @@ import {
 	type SupportedEngine,
 	type SupportedFormat,
 } from "../rendering";
+import sketchy from "../sketch.js";
 import { removeChildren } from "../utils";
 
 import "./Graph.css";
@@ -74,12 +75,14 @@ export class Graph extends Component<Props, State> {
 		let element: Rendering;
 		try {
 			element = await renderElement(dotSrc, format, engine);
-			// biome-ignore lint/suspicious/noExplicitAny: todo
+			console.log(element);
 		} catch (e: any) {
 			this.setState(createErrorState(e.message));
 			return;
 		}
 		if (element) {
+			console.log("pre");
+			element = sketchy(element);
 			this.setState(createElementState(element));
 		} else {
 			this.setState(createErrorState("Graph could not be rendered"));
