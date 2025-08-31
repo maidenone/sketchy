@@ -9,3 +9,9 @@ This site uses:
 *Want to add a language support feature?* Head over to the repository of [`dot-language-support`](https://github.com/nikeee/dot-language-support).
 
 *Think the website is cool?* There is also a language server! You can use the same language capabilities in your favourite editor! Have a look at [`dot-language-server`](https://github.com/nikeee/dot-language-server).
+
+# Getting started
+
+1. git clone repo
+2. npm install
+3. npm start

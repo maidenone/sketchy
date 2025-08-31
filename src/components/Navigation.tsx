@@ -30,7 +30,7 @@ export default function Navigation({
 	return (
 		<nav className="navbar navbar-expand-md navbar-dark bg-dark mb-0">
 			<div className="container-fluid">
-				<a className="navbar-brand" href="//edotor.net">
+				<a className="navbar-brand" href="//fosseli.us">
 					<SiteLogo />
 				</a>
 
@@ -72,22 +72,10 @@ export default function Navigation({
 						className="nav-link external-link"
 						target="_blank"
 						rel="noopener noreferrer"
-						href="//www.graphviz.org/documentation/"
+						href="//www.graphviz.org/gallery/"
 					>
-						Graphviz Documentation
+						Examples
 					</a>
-				</div>
-
-				<div className="nav-item navbar-nav">
-					<a
-						className="nav-link external-link"
-						target="_blank"
-						rel="noopener noreferrer"
-						href="//github.com/nikeee/edotor.net"
-					>
-						Issues
-					</a>
-					{import.meta.env.DEV && <Version />}
 				</div>
 
 				<div className="btn-group btn-group-sm">

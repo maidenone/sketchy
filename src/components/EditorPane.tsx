@@ -124,16 +124,19 @@ export class EditorPane extends Component<Props, State> {
 		return (
 			<MonacoEditor
 				language="dot"
+				theme="vs-dark"
 				defaultValue={defaultValue}
 				options={{
 					selectOnLineNumbers: true,
+					autoDetectHighContrast: false,
 					lineNumbers: "on",
 					wordWrap: "on",
 					roundedSelection: false,
 					scrollBeyondLastLine: false,
 					minimap: { enabled: false },
 					automaticLayout: true,
-					folding: true,
+					folding: false,
+					lineNumbersMinChars: 1,
 					glyphMargin: true,
 					lightbulb: { enabled: true },
 				}}

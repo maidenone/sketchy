@@ -1,15 +1,15 @@
 # Place the cursor inside "graph" to get some refactoring options
 
-graph {
+digraph {
 
     # To refactor nodes, place the cursor left to a node name
-    a -- b
-    a -- c;
-    a -- d;
+    a -> b
+    a -> c;
+    a -> d;
 
     # Hover over color names to get a color picker
-    b -- b [color=blue]
-    b -- d [color="#ff0000"];
+    b -> b [color=blue]
+    b -> d [color="#ff0000"];
 
     # Get completion when assigning a shape or color
     b [shape=box, color=yellow];
