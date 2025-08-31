@@ -75,13 +75,11 @@ export class Graph extends Component<Props, State> {
 		let element: Rendering;
 		try {
 			element = await renderElement(dotSrc, format, engine);
-			console.log(element);
 		} catch (e: any) {
 			this.setState(createErrorState(e.message));
 			return;
 		}
 		if (element) {
-			console.log("pre");
 			element = sketchy(element);
 			this.setState(createElementState(element));
 		} else {

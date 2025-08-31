@@ -91,9 +91,7 @@ const coarse = (() => {
 			}
 			return rv;
 		}
-		console.log("in1", svg);
 		const rc = rough.svg(svg, {});
-		console.log("out1", rc);
 
 		const children = svg.querySelectorAll(
 			"circle, rect, ellipse, line, polygon, polyline, path",
@@ -152,7 +150,6 @@ const coarse = (() => {
 			}
 
 			original.replaceWith(replacement);
-			console.log(original);
 		}
 	};
 })();
